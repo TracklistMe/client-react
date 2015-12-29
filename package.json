@@ -107,7 +107,7 @@
     "react-cookie": "^0.4.2",
     "react-d3-components": "git+https://github.com/codesuki/react-d3-components.git",
     "react-document-meta": "^2.0.0",
-    "react-dom": "^0.14.1",
+    "react-dom": "^0.14.5",
     "react-dropzone-component": "^0.8.1",
     "react-inline-css": "^2.0.0",
     "react-intl": "^1.2.1",
