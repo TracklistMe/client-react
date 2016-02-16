@@ -138,7 +138,7 @@
     "bootstrap-sass": "^3.3.5",
     "bootstrap-sass-loader": "^1.0.9",
     "chai": "^3.3.0",
-    "concurrently": "^0.1.1",
+    "concurrently": "^2.0.0",
     "eslint": "1.10.3",
     "eslint-config-airbnb": "0.1.0",
     "eslint-loader": "^1.0.0",
