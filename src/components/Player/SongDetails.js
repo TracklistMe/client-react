@@ -8,10 +8,10 @@ export default class SongDetails extends Component {
     const {title, username} = this.props;
     return (
       <div className="song-card-details">
-        <span>
+        <span className="song-card-title">
           {title}
-        </span><br />
-        <span>
+        </span>
+        <span className="song-card-artist">
           {username}
         </span>
       </div>

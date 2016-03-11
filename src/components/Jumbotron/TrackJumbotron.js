@@ -2,15 +2,32 @@ import React, {Component, PropTypes } from 'react';
 import MainHeaderBackground from '../MainHeader/MainHeaderBackground';
 import ArtistComponent from '../Artist/ArtistComponent';
 import CustomButton from '../Buttons/CustomButton';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 // import { Waveform, d3 } from 'react-d3-components/dist/react-d3-components';
 import {apiEndPoint} from '../../helpers/ApiClient';
+import {playTrack} from 'redux/modules/player';
+
+@connect(
+    state => ({player: state.player}),
+    dispatch => bindActionCreators({playTrack}, dispatch))
 
 export default class TrackJumbotron extends Component {
   static propTypes = {
     track: PropTypes.shape({
       Genres: PropTypes.array
-    })
+    }),
+    playTrack: PropTypes.func.isRequired
   };
+  constructor(props) {
+    super(props);
+    this.addTrackToPlayer = this.addTrackToPlayer.bind(this);
+  }
+  addTrackToPlayer() {
+    console.log('Received AD TRack Handle');
+    this.props.playTrack(this.props.track);
+    // this.props.addTrackToCart(this.props.item.data.id);
+  }
   render() {
     const data = [{
       label: 'somethingA',
@@ -50,7 +67,7 @@ export default class TrackJumbotron extends Component {
                   sharing Stats
                 </div>
                 <div className="col-lg-12 titleContainer">
-                      <h1>{track ? track.title + ' (' + track.version + ')' : ''} </h1>
+                      <h1 onClick={this.addTrackToPlayer}>{track ? track.title + ' (' + track.version + ')' : ''} </h1>
                 </div>
               </div>
               <div className="row">
