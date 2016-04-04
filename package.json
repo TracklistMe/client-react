@@ -126,7 +126,7 @@
     "react-dom": "^0.14.1",
     "react-dropzone": "^3.3.0",
     "react-ga": "^1.2.0",
-    "react-helmet": "^2.2.0",
+    "react-helmet": "^3.0.1",
     "react-inline-css": "^2.0.0",
     "react-intl": "^1.2.1",
     "react-redux": "^4.0.0",
