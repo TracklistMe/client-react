@@ -168,7 +168,7 @@
     "font-awesome": "^4.4.0",
     "font-awesome-webpack": "0.0.4",
     "json-loader": "^0.5.4",
-    "karma": "^0.13.10",
+    "karma": "^1.2.0",
     "karma-cli": "^0.1.1",
     "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.1.1",
