@@ -124,7 +124,7 @@
     "react-bootstrap": "^0.28.1",
     "react-cookie": "^0.4.2",
     "react-document-meta": "^2.0.0",
-    "react-dom": "^0.14.1",
+    "react-dom": "^15.0.0",
     "react-dropzone": "^3.3.0",
     "react-ga": "^1.2.0",
     "react-helmet": "^3.0.2",
